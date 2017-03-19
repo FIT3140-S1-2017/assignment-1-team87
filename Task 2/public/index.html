@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Assignment</title>
+</head>
+<body>
+    <div>
+        <header>IoT Control Panel</header>
+    </div>
+    <br />
+    <div class="content">
+        <div class="label">
+            <label>Turn LED On/ Off</label>
+            <br />
+            <label>Turn Motion Sensor On/ Off</label>
+            <br />
+            <label>Short Motions</label>
+            <br />
+            <label>Long Motions</label>
+            <br />
+            <label>Total Motions</label>
+        </div>
+
+        <div class="info">
+            <label class="switch">
+                <input type="checkbox" />
+                <span class="slider" id="OnLED"></span>
+            </label>
+            <br />
+            <label class="switch">
+                <input type="checkbox" />
+                <span class="slider" id="OnMotion"></span>
+            </label>
+            <br />
+            <span id="short_motion">0</span>
+            <br />
+            <span id="long_motion">0</span>
+            <br />
+            <span id="total_motion">0</span>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+            crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/conn.js"></script>
+</body>
+</html>
