@@ -100,6 +100,7 @@ function writeToMotion(state, socket) {
         //turn off sensor
         clearInterval(interval);
         console.log("stop interval ")
+        bone.digitalWrite(led, 0);
     }
 }
 
